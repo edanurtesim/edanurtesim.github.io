@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Zoo Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            margin-bottom: 100px; 
+        }
+        .footer {
+            background-color: #cd6e57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #7a7671;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .navbar .nav-link {
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .active {
+            background-color: #cd6e57;
+            color: white;
+        }
+        #about {
+            background-color: white;
+            color: black;
+            padding: 64px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        #about p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+        .about-image {
+            margin-top: 40px;
+            max-width: 800px;
+        }
+        .blog-posts {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            text-align: left;
+        }  
+
+        .blog-post h2 {
+            color: #333;
+        }
+
+        .blog-post p {
+            color: #666;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="blog" class="container-fluid text-center py-5">
+        <h2>BLOG</h2>
+        <img src="blogphoto.jpg" alt="Blog" class="about-image">
+    </section>
+
+    <div class="container">
+        <h1 style="text-align: center;">Welcome to the Wild World Blog!</h1>
+        <p style="text-align: center;">Step into the wild with our blog, where every post is an adventure!</p>
+        <div class="blog-posts">
+          <div class="blog-post">
+            <h2>Exploring the African Savanna</h2>
+            <p>Join us as we venture into the heart of Africa to discover its magnificent wildlife and breathtaking landscapes.</p>
+            <a href="blog1.html" class="btn btn-primary">Read More</a>
+          </div>
+          <div class="blog-post">
+            <h2>Protecting Endangered Species</h2>
+            <p>Learn about our efforts to protect and conserve endangered species and how you can contribute to their survival.</p>
+            <a href="blog2.html" class="btn btn-primary">Read More</a>
+          </div>
+          <div class="blog-post">
+            <h2>Another New Blog Post</h2>
+            <p>This is another new blog post. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <a href="blog3.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>  
+
+    <footer class="footer text-center py-4">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/">X</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+        <p>&copy; 2024 Zoo Website</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
