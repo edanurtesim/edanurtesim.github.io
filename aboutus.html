@@ -7,15 +7,59 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
     <style>
-        /* Mevcut stiller buraya gelecek */
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .footer {
+            background-color: #cd6e57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #7a7671;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .navbar .nav-link {
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .active {
+            background-color: #cd6e57;
+            color: white;
+        }
+        #about {
+            background-color: white;
+            color: black;
+            padding: 64px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .about-image {
+            margin-top: 40px;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
 
-        /* Ekstra stiller */
+        /* Responsive özellikler */
         @media screen and (max-width: 768px) {
             .navbar {
-                margin: 0; /* Ekran daraltıldığında boşlukları azaltmak için */
+                margin: 0;
             }
             .about-image {
-                max-width: 100%; /* Küçük ekranlarda görsel tam olarak sığması için */
+                max-width: 100%;
             }
         }
     </style>
@@ -35,5 +79,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
