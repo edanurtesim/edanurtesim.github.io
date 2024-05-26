@@ -1,1 +1,192 @@
-Merhaba dünya!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .footer {
+            background-color: #cd6e57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px; /* Üstten boşluk ekleyin */
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #7a7671;
+        }
+        .navbar .nav-link {
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .active {
+            background-color: #cd6e57;
+            color: white;
+        }
+        #about, #contact {
+            background-color: #7a7671;
+            color: white;
+            padding: 64px 20px;
+            text-align: center;
+        }
+        #about p, #contact p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .btn-custom {
+            background-color: #cd6e57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+        }
+        .btn-custom:hover, .btn-custom:focus {
+            background-color: #7a7671;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="home.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Bölümü -->
+    <section id="home" class="container text-center py-5">
+        <h2>Welcome to Our Zoo</h2>
+        <p>Discover the amazing world of animals!</p>
+        <p>
+            Our zoo hosts a variety of species from around the world.
+            <br> We are committed to providing a safe habitat for our animals and an educational, enjoyable experience for our visitors. 
+            <br>Explore the wonders of wildlife, from majestic lions to playful monkeys, and learn about the importance of conservation. 
+            <br>Join us in making a difference for these incredible creatures and their habitats.
+        </p>
+    </section>
+
+    <!-- Slider Bölümü -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slider1.jpg" class="d-block w-100" alt="Slider 1">
+            </div>
+            <div class="carousel-item">
+                <img src="slider2.jpg" class="d-block w-100" alt="Slider 2">
+            </div>
+            <div class="carousel-item">
+                <img src="slider3.jpg" class="d-block w-100" alt="Slider 3">
+            </div>
+            <div class="carousel-item">
+                <img src="slider4.jpg" class="d-block w-100" alt="Slider 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Boşluk -->
+    <div style="height: 50px;"></div>
+
+    <!-- About Us Bölümü -->
+    <section id="about" class="container text-center py-5">
+        <h2>About Us</h2>
+        <p>
+            Our zoo is dedicated to the conservation of wildlife and the education of our visitors. 
+            <br>Learn more about our mission and values, and how we are working to protect animals and their habitats.
+        </p>
+        <a href="aboutus.html" class="btn btn-custom">Learn More</a>
+    </section>
+
+    <!-- Blog Bölümü -->
+    <section id="blog" class="container text-center py-5">
+        <h2>Blog</h2>
+        <p>
+            Explore the latest stories and updates from our zookeepers and conservationists.
+        </p>
+        <a href="blog.html" class="btn btn-custom">Read Our Blog</a>
+    </section>
+
+    <!-- Contact Bölümü -->
+    <section id="contact" class="container text-center py-5">
+        <h2>Contact Us</h2>
+        <p>
+            We would love to hear from you! 
+            <br>Whether you have questions, feedback, or want to learn more about our zoo, feel free to reach out.
+        </p>
+        <a href="contact.html" class="btn btn-custom">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/">X</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+        <p>&copy; 2024 Zoo Website</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Slider JavaScript kodları
+        var myCarousel = document.querySelector('#carouselExampleControls');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000,
+            wrap: true
+        });
+
+        // Navigasyon menüsünde aktif bağlantıyı değiştirme
+        var navItems = document.querySelectorAll('.nav-link');
+        navItems.forEach(function(navItem) {
+            navItem.addEventListener('click', function() {
+                navItems.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
