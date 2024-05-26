@@ -52,20 +52,39 @@
             max-width: 800px;
             margin-bottom: 40px;
         }
-
-        /* Responsive özellikler */
-        @media screen and (max-width: 768px) {
-            .navbar {
-                margin: 0;
-            }
-            .about-image {
-                max-width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Mevcut HTML kodu buraya gelecek -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="container-fluid text-center py-5">
+        <h2>ABOUT US</h2>
+        <img src="aboutusphoto.jpg" alt="About Us" class="about-image">
+        <p>
+            Our zoo is dedicated to the conservation of wildlife and the education of our visitors. 
+            <br>Learn more about our mission and values, and how we are working to protect animals and their habitats.
+        </p>
+    </section>
 
     <footer class="footer text-center py-4">
         <div class="social-icons">
@@ -79,6 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
